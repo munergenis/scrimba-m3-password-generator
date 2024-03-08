@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Password Generator - Never use an insecure password again</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  
+  <div class="container">
+    <h1>Generate a <span class="h1-span">random password</span></h1>
+    <p class="slogan">Never use an insecure password again.</p>
+    <div class="length-cont">
+      <label class="length">
+        Password Length
+        <div class="input-cont">
+          <input class="range" type="range" value="15" min="4" max="18" onInput="this.nextElementSibling.value = this.value">
+          <output id="pass-length">15</output>
+        </div>
+        <button id="btn-generate">Generate passwords</button>
+      </label>
+    </div>
+    <div class="password-cont">
+      <p class="password" id="password-1">fgasdgagagasgas</p>
+      <p class="password" id="password-2">asdgasgasdgasdg</p>
+    </div>
+    <div class="copied-cont">
+      <p class="copied copied-fade-out" id="copied-1">copied</p>
+      <p class="copied copied-fade-out" id="copied-2">copied</p>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
